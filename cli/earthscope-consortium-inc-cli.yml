@@ -1,0 +1,32 @@
+generated: '2026-10-23'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.earthscope.org/cli
+sources:
+- https://docs.earthscope.org/cli
+- https://docs.earthscope.org/cli/authentication
+- https://docs.earthscope.org/cli/user
+- https://docs.earthscope.org/cli/http-examples
+install:
+- method: pip
+  command: pip install earthscope-cli
+- method: pip-upgrade
+  command: pip install --upgrade earthscope-cli
+commands:
+- group: root
+  commands:
+  - login
+  - logout
+  - dropoff
+  - user
+- group: user
+  commands:
+  - get-access-token
+  - get-access-token-body
+  - get-aws-credentials
+  - get-profile
+  - get-refresh-token
+  - refresh-access-token
+  - revoke-refresh-token
+binary: es
+docs: https://docs.earthscope.org/cli

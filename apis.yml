@@ -1,23 +1,86 @@
 aid: earthscope-consortium-inc
+
 name: EarthScope Consortium, Inc.
-description: 'EarthScope Consortium, Inc. is a company surfaced via the API Evangelist harvest backlog
-  (source: vc-portfolio) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'EarthScope Consortium, Inc. is a university consortium dedicated to transforming global geophysical research and education. It operates NSF’s GAGE and SAGE facilities, providing data and tools for seismology, geodesy, and earth science research, and supports collaborative projects across academia and industry.'
+
 url: https://raw.githubusercontent.com/api-evangelist/earthscope-consortium-inc/refs/heads/main/apis.yml
+
+image: https://www.earthscope.org/app/uploads/2022/11/EarthScope_Logo-color.png
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Geophysics
+- Research
+- Education
+- NSF
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Documentation
+  url: https://docs.earthscope.org/
+- type: CLI
+  url: cli/earthscope-consortium-inc-cli.yml
+- type: ChangeLog
+  url: changelog/earthscope-consortium-inc-changelog.yml
+- type: Authentication
+  url: authentication/earthscope-consortium-inc-authentication.yml
+- type: Hosts
+  url: hosts/earthscope-consortium-inc-hosts.yml
+- type: Vendors
+  url: vendors/earthscope-consortium-inc-vendors.yml
+- type: SDKs
+  url: packages/earthscope-consortium-inc-packages.yml
+- type: Packages
+  url: packages/earthscope-consortium-inc-packages.yml
+- type: TermsOfService
+  url: https://www.earthscope.org/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.earthscope.org/privacy-policy/
+- type: Newsroom
+  url: https://www.earthscope.org/news/
+- type: GettingStarted
+  url: https://docs.earthscope.org/geolab/getting-started
+- type: GitHubOrganization
+  url: https://github.com/EarthScope
+- type: DomainSecurity
+  url: security/earthscope-consortium-inc-domain-security.yml
 - type: Website
   url: https://www.earthscope.org/
+- type: Support
+  url: https://www.earthscope.org/project-support-request/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public developer program or API documentation was found; the documentation page returned 404.
+  evidence:
+    - url: https://www.earthscope.org/documentation/
+      status: 404
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 14
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

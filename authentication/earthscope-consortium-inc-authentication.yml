@@ -1,0 +1,19 @@
+generated: '2026-10-23'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.earthscope.org/cli/authentication
+sources:
+- https://docs.earthscope.org/cli/authentication
+- https://docs.earthscope.org/sdk/authentication
+- https://docs.earthscope.org/geolab/getting-started
+- https://docs.earthscope.org/geolab/getting-started/access
+description: Authentication schemes for EarthScope APIs
+schemes:
+- type: oauth2
+  name: EarthScope OAuth2
+  evidence: 'If the browser does not open or you wish to use a different device to authorize this request, open the following URL: https://login.earthscope.org/activate?user_code=ABCD-EFGH'
+  flows:
+  - device_code
+  authorize_url: https://login.earthscope.org/activate?user_code=ABCD-EFGH
+  how_to_obtain: Use the `es login` CLI command which opens the SSO authorization page; if it does not open, copy the provided URL into a browser.
+docs: https://docs.earthscope.org/cli/authentication

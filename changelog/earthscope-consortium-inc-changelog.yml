@@ -1,0 +1,46 @@
+generated: '2026-10-23'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.earthscope.org/cli/changelog
+sources:
+- https://docs.earthscope.org/cli/changelog
+- https://docs.earthscope.org/sdk/changelog
+entries:
+- breaking: true
+  highlights:
+  - 'Important Python: Support for Python 3.9 is removed.'
+  - Python 3.10 or newer is required; pip will not install this release on 3.9.
+  - es dropoff upload requires explicit --source and --destination.
+  date: 2026-04-24|v1.2.0
+- breaking: false
+  highlights:
+  - 'new: add dropoff get-summary CLI command'
+  - 'fix: always print summary after upload attempt'
+  - 'docs: no color env variable'
+  - 'chore: update typer dependency'
+  date: 2026-03-16|v1.1.2
+- breaking: false
+  highlights:
+  - 'fix: pin typer<0.24.0 for python 3.9 compatibility'
+  date: 2026-02-20|v1.1.1
+- breaking: false
+  highlights:
+  - new support for EarthScope Dropoff system
+  date: 2026-01-21|v1.1.0
+- breaking: false
+  highlights:
+  - (docs) fix UNAVCO -> GAGE facility naming
+  - (bug) cleanup SDK resources when CLI exits
+  - (docs) fix repository URL in docs
+  - (deps) bump typer dependency to 0.17.3
+  date: 2025-09-04|v1.0.1
+- breaking: false
+  highlights:
+  - Initial Release
+  - Upgrade to new EarthScope SDK v1
+  - 'Authentication Commands : es login and es logout with device code and client credentials flows'
+  - 'User Management : Commands for token management, profile access, and AWS credentials'
+  date: 2025-06-18|v1.0.0
+current_version: v1.2.0
+docs: https://docs.earthscope.org/cli/changelog
+note: Versioning scheme follows semantic versioning (vMAJOR.MINOR.PATCH).

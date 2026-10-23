@@ -1,0 +1,61 @@
+generated: '2026-10-23'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/EarthScope
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (earthscope.org,
+  security/earthscope-consortium-inc-domain-security.yml) or its accepted GitHub org (EarthScope).'
+packages:
+- name: libmseed
+  registry: github
+  url: https://github.com/EarthScope/libmseed
+  language: C
+  official: true
+  version: null
+  published: '2026-10-14'
+  source_repo: https://github.com/EarthScope/libmseed
+  evidence: repository in github.com/EarthScope, whose profile names the provider's domain
+- name: libslink
+  registry: github
+  url: https://github.com/EarthScope/libslink
+  language: C
+  official: true
+  version: null
+  published: '2026-08-12'
+  source_repo: https://github.com/EarthScope/libslink
+  evidence: repository in github.com/EarthScope, whose profile names the provider's domain
+- name: seedlink-client
+  registry: github
+  url: https://github.com/EarthScope/seedlink-client
+  language: Python
+  official: true
+  version: null
+  published: '2026-08-09'
+  source_repo: https://github.com/EarthScope/seedlink-client
+  evidence: repository in github.com/EarthScope, whose profile names the provider's domain
+- name: datalink-client
+  registry: github
+  url: https://github.com/EarthScope/datalink-client
+  language: Python
+  official: true
+  version: null
+  published: '2026-08-03'
+  source_repo: https://github.com/EarthScope/datalink-client
+  evidence: repository in github.com/EarthScope, whose profile names the provider's domain
+- name: mseedlib
+  registry: github
+  url: https://github.com/EarthScope/mseedlib
+  language: C
+  official: true
+  version: null
+  published: '2025-08-19'
+  source_repo: https://github.com/EarthScope/mseedlib
+  evidence: repository in github.com/EarthScope, whose profile names the provider's domain
+- name: libdali
+  registry: github
+  url: https://github.com/EarthScope/libdali
+  language: C
+  official: true
+  version: null
+  published: '2025-05-06'
+  source_repo: https://github.com/EarthScope/libdali
+  evidence: repository in github.com/EarthScope, whose profile names the provider's domain

@@ -1,0 +1,22 @@
+generated: '2026-10-23'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.earthscope.org
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: May  5 23:59:59 2027 GMT
+  hsts: false
+domains:
+- domain: earthscope.org
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  - 0 issuewild "amazon.com"
+  - 0 issuewild "digicert.com"
+  - 0 issuewild "letsencrypt.org"
+  - 0 issuewild "pki.goog"
+  spf: true
+  dmarc: true
+  dmarc_policy: none
